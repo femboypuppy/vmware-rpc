@@ -5,7 +5,7 @@ import os
 
 def is_vmware_running():
     for proc in psutil.process_iter(['name']):
-        if proc.info['name'] in ['vmware.exe', 'vmware-vmx.exe', 'vmware-tray.exe']:
+        if proc.info['name'] in ['vmware.exe', 'vmware-vmx.exe']:
             return True
     return False
 

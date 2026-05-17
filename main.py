@@ -28,20 +28,20 @@ def main():
                     print("\nVMware closed")
                     rpc.clear()
                     last_vm = None
-                    vmware_was_running = False
+                vmware_was_running = False
             elif vm_info:
                 if vm_info != last_vm:
                     print(f"\nVM Detected: {vm_info['name']}")
                     print(f"OS: {vm_info['os']}")
                     rpc.update(vm_info)
                     last_vm = vm_info
-                    vmware_was_running = True
+                vmware_was_running = True
             else:
-                if last_vm or not vmware_was_running:
+                if last_vm is not None or not vmware_was_running:
                     print("\nVMware open - Idling")
                     rpc.idle()
                     last_vm = None
-                    vmware_was_running = True
+                vmware_was_running = True
             
             time.sleep(5)
     
