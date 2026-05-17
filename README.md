@@ -1,3 +1,7 @@
+
+# ONLY WORKS IN VMWARE WORKSTATION PRO (It's free please don't use vmware player guys)
+
+
 # VMware Discord Rich Presence
 
 Shows your running VMware VM in Discord status.
