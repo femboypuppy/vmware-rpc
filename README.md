@@ -4,7 +4,7 @@
 
 Shows your currently running VMware VM in your Discord status, including the VM name and OS. Updates every 5 seconds and clears when no VM is running.
 
-![Discord Status Example](https://i.imgur.com/placeholder.png)
+![Discord Status Example](https://github.com/femboypuppy/imgs/blob/main/exemplevmware.jpg?raw=true)
 
 ---
 
